@@ -53,8 +53,22 @@ function unflipCards() {
 }
 
 function resetBoard() {
-    [hasFlippedCard, lockBoard] = [false, false];
-    [firstCard, secondCard] = [null, null];
+    hasFlippedCard = false;
+    lockBoard = false;
+    firstCard = null;
+    secondCard = null;
+}
+
+(function shuffle() {
+    cards.forEach(card => {
+        let randomPos = Math.floor(Math.random() * 12);
+        card.style.order = randomPos;
+    });
+})();
+
+//restarting game
+function startGame(){
+    resetBoard();
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard))
