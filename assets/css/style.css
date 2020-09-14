@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Ranchers&display=swap');
+
 
 * {
     padding: 0;
@@ -58,7 +59,9 @@ body {
 
 /* jumbotron */
 .jumbotron {
-    background-color: white
+    background-color: white;
+    padding-bottom: 0px;
+    padding-top: 50px;
 }
 .title-main {
     font-family: "Ranchers", sans-serif;
@@ -66,6 +69,15 @@ body {
 }
 
 .title-para {
-    font-family: "Lato", sans-serif;
+    font-family: "Raleway", sans-serif;
     text-align: center;
+}
+
+/* Reset Button */
+
+.reset-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
