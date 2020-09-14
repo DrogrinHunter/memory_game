@@ -61,7 +61,7 @@ body {
 .jumbotron {
     background-color: white;
     padding-bottom: 0px;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 .title-main {
     font-family: "Ranchers", sans-serif;
@@ -80,4 +80,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100px;
+}
+
+/* Info */
+.info {
+    margin: 0;
+    position: absolute;
+    left: 10%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
