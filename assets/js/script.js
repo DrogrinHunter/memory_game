@@ -69,6 +69,8 @@ function resetBoard() {
 //restarting game
 function startGame(){
     resetBoard();
+    console.log("this has worked");
+    location.reload();
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard))
